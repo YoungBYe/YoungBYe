@@ -1,3 +1,4 @@
+```
 package DES;
 
 public class main{
@@ -12,8 +13,9 @@ public class main{
         desExample.analyzeKeyDifference(m, 100); // 对密钥差分进行100次样本分析
     }
 }
+```
 
-
+```
 package DES;
 
 import javax.crypto.Cipher;
@@ -64,8 +66,9 @@ public class DES {
         return cipher.doFinal(data);
     }
 }
+```
 
-
+```
 package DES;
 
 public class DESExample {
@@ -109,8 +112,9 @@ public class DESExample {
         }
     }
 }
+```
 
-
+```
 package DES;
 
 import java.security.SecureRandom;
@@ -133,8 +137,9 @@ public class BitStringGenerator {
         return bitString;
     }
 }
+```
 
-
+```
 package DES;
 
 public class BitUtils {
@@ -147,3 +152,4 @@ public class BitUtils {
         return weight;
     }
 }
+```

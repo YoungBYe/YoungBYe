@@ -1,3 +1,4 @@
+```
 package Caesar;
 
 import java.util.Scanner;
@@ -43,9 +44,10 @@ public class main {
             }
         }while(true);
     }
-}
+} 
+```
 
-
+```
 package Caesar;
 
 public class caesarPassword {
@@ -142,5 +144,5 @@ public class caesarPassword {
             System.out.println("向后偏移" + offset + "位时，得到明文为：" + String.valueOf(chars1));
         }
     }
-}
-
+} 
+```

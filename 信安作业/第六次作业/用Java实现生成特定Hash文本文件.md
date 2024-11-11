@@ -1,3 +1,4 @@
+```
 package HashGenerator;
 
 import java.security.MessageDigest;
@@ -41,3 +42,4 @@ public class HashGenerator {
         }
     }
 }
+```

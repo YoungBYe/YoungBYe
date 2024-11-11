@@ -1,3 +1,4 @@
+```
 package DHandRSA;
 
 public class DH {
@@ -43,8 +44,9 @@ public class DH {
         return res;
     }
 }
+```
 
-
+```
 package DHandRSA;
 
 import java.util.Random;
@@ -123,8 +125,9 @@ public class RSA {
         return a;
     }
 }
+```
 
-
+```
 package DHandRSA;
 
 public class test{
@@ -190,3 +193,7 @@ public class test{
         System.out.println("RSA测试通过: e和d有效");
     }
 }
+```
+---
+## RES手写作业:
+![image](https://github.com/YoungBYe/YoungBYe/blob/main/%E4%BF%A1%E5%AE%89%E4%BD%9C%E4%B8%9A/RSA%E6%89%8B%E5%86%99%E4%BD%9C%E4%B8%9A.jpg)

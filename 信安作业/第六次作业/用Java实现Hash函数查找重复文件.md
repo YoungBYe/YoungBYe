@@ -1,3 +1,4 @@
+```
 package DuplicateFileFinder;
 
 import java.io.File;
@@ -69,28 +70,47 @@ public class DuplicateFileFinder {
         }
     }
 }
+```
 
-目的： 查找本地硬盘上的重复文件。
+## 目的：   
 
-方法：
-使用Java的MessageDigest类计算文件的SHA-256哈希值。
-遍历指定目录下的所有文件，计算每个文件的哈希值，并记录文件路径与哈希值的对应关系。
-对哈希值进行排序，查找具有相同哈希值的文件。
-对于具有相同哈希值的文件，比较文件长度和部分随机内容以确认是否完全相同。
+查找本地硬盘上的重复文件。
 
-结果：
+---
+
+## 方法：   
+
+使用Java的MessageDigest类计算文件的SHA-256哈希值。   
+遍历指定目录下的所有文件，计算每个文件的哈希值，并记录文件路径与哈希值的对应关系。   
+对哈希值进行排序，查找具有相同哈希值的文件。   
+对于具有相同哈希值的文件，比较文件长度和部分随机内容以确认是否完全相同。   
+
+---
+
+## 结果：   
+
 程序输出了所有具有相同哈希值的文件列表，这些文件极有可能是重复的。
 
-结论：
+---
+
+## 结论：   
+
 该程序有效地识别了本地硬盘上的重复文件，有助于清理磁盘空间并保持文件系统的整洁。
 
-注意事项：
-确保在运行程序之前备份重要数据，以防止数据丢失。
-程序运行时可能会消耗较多计算资源，尤其是在处理大量大文件时。
-保护个人隐私，确保不处理包含敏感信息的文件。
+---
 
-区块链（比特币）源代码中的Hash算法:
+## 注意事项：      
+
+确保在运行程序之前备份重要数据，以防止数据丢失。   
+程序运行时可能会消耗较多计算资源，尤其是在处理大量大文件时。   
+保护个人隐私，确保不处理包含敏感信息的文件。   
+
+---
+
+## 区块链（比特币）源代码中的Hash算法:      
+
 比特币使用SHA-256算法进行区块哈希的计算。以下是比特币源代码中与Hash算法相关的部分：
+```
 // Bitcoin source code snippet
 uint256 ComputeHash(const uint256& prevBlock, const uint256& merkleRoot, uint32_t nTime, uint32_t nBits, uint32_t nNonce) {
     CBlockHeader blockHeader;
@@ -101,4 +121,5 @@ uint256 ComputeHash(const uint256& prevBlock, const uint256& merkleRoot, uint32_
     blockHeader.nNonce = nNonce;
     return blockHeader.GetHash();
 }
+```
 这段代码定义了一个函数ComputeHash，它接受区块头的各个部分作为参数，并返回该区块头的哈希值。这个哈希值用于验证区块的完整性和工作量证明。
